@@ -1,0 +1,110 @@
+body {
+  font-family: Verdana, sans-serif;
+}
+.button {
+  width: 10%;
+  height: 4vw;
+  padding: 1vw;
+  text-align: center;
+
+  background-color: red;
+  box-shadow: 0px 0px 20px 0px rgb(71, 71, 71), 0px 0px 20px 0px rgb(31, 31, 31),
+    rgb(85, 40, 40) 5px 5px 20px 2px inset;
+  transition: box-shadow 60ms ease-in, background-color 80ms ease-in;
+  border-radius: 10px;
+  border: 2px solid rgb(107, 17, 17);
+  background-clip: padding-box;
+  white-space: nowrap;
+  color: rgb(255, 255, 255);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  text-shadow: 10px 10px 10px 10px rgb(54, 0, 0);
+}
+
+.button:active {
+  box-shadow: 0px 0px 0px 0px, 0px 0px 5px 0px rgb(31, 31, 31),
+    rgb(73, 24, 24) 5px 5px 20px 12px inset;
+}
+.button:hover {
+  background-color: rgba(255, 0, 0, 0.842);
+}
+
+.downloadButton {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.download-content {
+  position: absolute;
+  max-width: 160;
+  display: none;
+  right: 0;
+  width: 2%;
+  margin: 0vw 0.5vw 0.5vw 0.5vw;
+}
+.download-content a {
+  padding: 12px 16px;
+  display: block;
+  background-color: rgb(187, 187, 187);
+  color: rgb(70, 70, 70);
+}
+.downloadMenu:hover .download-content {
+  display: block;
+}
+/*CHAT THING*/
+/*div.userManagement_content {
+  border: 0.5vw solid black;
+  width: 20%;
+  position: absolute;
+  display: none;
+  margin-top: 20px;
+  padding: 1vw;
+  font-size: 0.8vw;
+}
+.userButton {
+  background-color: red;
+  width: fit-content;
+  float: right;
+  top: 1px;
+}
+.userManagement {
+  float: right;
+  margin-right: 15%;
+}
+.userManagement:hover .userManagement_content {
+  display: block;
+}*/
+.message {
+  display: inline-block;
+}
+.messageFrame {
+  display: inline-block;
+  padding: 0.2vw;
+  border-radius: 10px;
+  border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 100%;
+  background: linear-gradient(rgba(47, 143, 221, 0.781), rgb(47, 89, 179));
+  border: 0.1vw solid blue;
+  width: fit-content;
+  font-family: Gothic;
+}
+.messageTime {
+  position: absolute;
+  right: 0;
+}
+.userComment {
+  height: 2vw;
+  width: 10vw;
+}
+#refresh {
+  display: inline-block;
+}
+.userButton {
+  display: inline-block;
+}
+.messagesPanel {
+  border: 0.5vw solid red;
+}
